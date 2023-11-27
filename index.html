@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarization</title>
+
+    <!-- Add some basic styling for better appearance -->
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0; 
+            background-image: url('../newsblue.png');
+    
+        }
+
+            p {
+              background-image: url('../newsblue.png');
+            }
+
+
+        .container{
+            background-color: #9BBEC8;
+            margin: 0 350px 0 350px;
+            border: 0;
+            border-radius: 40px;
+        }
+        h1{
+            padding-top: 20px;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 20px 0 20px;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        
+        input[type="text"] {
+            width: 800px;   
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #text{
+            margin: 30px;
+        }
+
+        input[type="submit"] {
+            background-color: #164863;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
+            margin-bottom: 30px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0f3245;
+        }
+        
+    </style>
+</head>
+<body>    
+    <div class="container">
+    <h1>Text Summarization</h1>
+
+    <form method="POST">
+        <label for="text"><b>Enter text:</b></Enter></label>
+        <!-- <input type="text" name="text" id="text"> -->
+        <textarea name="text" id="text" cols="100" rows="30"></textarea>
+        <input type="submit" name="submit" id="submit" value="Summarize">
+    </form>
+</div>
+
+</body>
+
+
+</html>
